@@ -52,7 +52,7 @@ const Products = ({product}) => {
 
                     <h5>{product.nombre}</h5>
                     <h4 className="card-precio">$ {product.precio}</h4>
-                     <button onClick={() => buyProducts(product)} className="card-button">Buy</button>
+                     <button onClick={() => buyProducts(product)} className="card-button">Agregar a mi carrito</button>
                      <Link to={`/productos/${product.id}`} style={{textDecoration:'none', margin:'10px', fontWeight:'bold'}}>Ver mas</Link>
                
                </section>
