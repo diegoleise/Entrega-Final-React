@@ -48,7 +48,7 @@
     .cart-drawer {
         
     position: absolute;
-    top: 440px;
+    top: 52vh;
     left: 0;
     background-color: greenyellow;
     width: 360px;
@@ -61,7 +61,7 @@
 
     .count-products {
         position: absolute;
-        top: 90%;
+        top: 95%;
         left: 30px;
 
         background-color: white;
