@@ -1,0 +1,19 @@
+.product-card-container{
+    overflow-y: auto;
+    text-align: center;
+
+}
+
+.product-card{
+   
+    height: 120px;
+    width: 100px;
+    text-align: center;
+    object-fit: cover;
+}
+
+
+.cart-total{
+    text-align: center;
+}
+

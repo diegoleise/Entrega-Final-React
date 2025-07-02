@@ -1,0 +1,71 @@
+.nav-container {
+  display: flex;
+
+  z-index: 100;
+ 
+}
+
+.navbar {
+ display: flex;
+ width: 100%;
+ background-color: chocolate;
+}
+
+
+.nav-h2 {
+  display: flex;
+  margin-right: 30px;
+  margin-left: 10px;
+  color: rgb(18, 19, 19);
+  margin-top: 4vh;
+  cursor: pointer;
+  text-decoration: none;
+}
+
+.nav-h2:hover {
+  color: white;
+
+}
+
+.nav-cart {
+
+  font-size: 30px;
+  margin-right: 20px;
+  margin-top: 4vh;
+  cursor: pointer;
+}
+
+.icon-cart {
+  
+  width: 40px;
+  height: 40px;
+  stroke: #000;
+  margin-top: 2vh;
+}
+
+
+.icon-cart:hover {
+  cursor: pointer;
+}
+
+.container-icon {
+  position: relative;
+}
+
+.count-products {
+  position: absolute;
+  top: 45%;
+  right: 0;
+
+  background-color: white;
+  color: black;
+  font-weight: bold;
+  width: 25px;
+  height: 25px;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 12px
+}
