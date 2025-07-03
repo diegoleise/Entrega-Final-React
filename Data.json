@@ -1,0 +1,82 @@
+[
+  {
+    "nombre": "Zapallo",
+    "precio": "787.03",
+    "stock": 18,
+    "cantidad": 1,
+    "imagen": "https://media.istockphoto.com/id/2155084548/es/foto/brote-de-soja-de-cerca-en-un-campo-agr%C3%ADcola-plantas-en-campo-abierto-enfoque-selectivo-enfoque.webp?a=1&b=1&s=612x612&w=0&k=20&c=WDdslgsGHfQpLbQzK8GZfsmV9Tc8OfqBj4222W4XN98=",
+    "id": 1
+  },
+  {
+    "nombre": "Variedad",
+    "precio": "239.15",
+    "stock": 35,
+    "cantidad": 1,
+    "imagen": "https://plus.unsplash.com/premium_photo-1673969608223-4e9bce1e700c?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww",
+    "id": 2
+  },
+  {
+    "nombre": "Surtido plantas",
+    "precio": "411.85",
+    "stock": 69,
+    "cantidad": 1,
+    "imagen": "https://images.unsplash.com/photo-1592150621744-aca64f48394a?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww",
+    "id": 3
+  },
+  {
+    "nombre": "Potus",
+    "precio": "986.45",
+    "stock": 25,
+    "cantidad": 1,
+    "imagen": "https://plus.unsplash.com/premium_photo-1674237276501-595398f90f87?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NXx8aW5kb29yJTIwcGxhbnRzfGVufDB8fDB8fHww",
+    "id": 4
+  },
+  {
+    "nombre": "Palmera",
+    "precio": "245.15",
+    "stock": 15,
+    "cantidad": 1,
+    "imagen": "https://images.unsplash.com/photo-1604762525953-2c80447cc4a6?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTF8fGluZG9vciUyMHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D",
+    "id": 5
+  },
+  {
+    "nombre": "Aloe vera",
+    "precio": "237.19",
+    "stock": 20,
+    "cantidad": 1,
+    "imagen": "https://images.unsplash.com/photo-1509423350716-97f9360b4e09?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MjB8fGluZG9vciUyMHBsYW50c3xlbnwwfHwwfHx8MA%3D%3D",
+    "id": 6
+  },
+  {
+    "nombre": "Tulipan",
+    "precio": "461.19",
+    "stock": 7,
+    "cantidad": 1,
+    "imagen": "https://media.istockphoto.com/id/2154148537/es/foto/vista-lateral-de-la-planta-de-interior-en-maceta-areca-palm.webp?a=1&b=1&s=612x612&w=0&k=20&c=L8jNrlq4cpWD5PDkfQMIYlOMnW8rTamVlmQR40AoZ1I=",
+    "id": 7
+  },
+  {
+    "nombre": "Jasmin",
+    "precio": "593.30",
+    "stock": 4,
+    "cantidad": 1,
+    "imagen": "https://media.istockphoto.com/id/2191219455/es/foto/planta-de-interior-verde-en-una-maceta.webp?a=1&b=1&s=612x612&w=0&k=20&c=BZOu2z8D4-cQfuchQQMaQhk9Ou0Yh28bpr2RUSpRpLQ=",
+    "id": 8
+  },
+  {
+    "nombre": "Amapola",
+    "precio": "624.75",
+    "stock": 80,
+    "cantidad": 1,
+    "imagen": "https://media.istockphoto.com/id/1454383133/es/foto/colecci%C3%B3n-de-hermosas-plantas-en-macetas-de-cer%C3%A1mica-aisladas-sobre-fondo-blanco-renderizado-3d.webp?a=1&b=1&s=612x612&w=0&k=20&c=gMSyrOAdLctdps3njHkJFqNFbgbb4cBV9bFUbN6L0bs=",
+    "id": 9
+  },
+  {
+    "nombre": "Orquidea",
+    "precio": "960.00",
+    "stock": 51,
+    "cantidad": 1,
+    "imagen": "https://media.istockphoto.com/id/2191219455/es/foto/planta-de-interior-verde-en-una-maceta.webp?a=1&b=1&s=612x612&w=0&k=20&c=BZOu2z8D4-cQfuchQQMaQhk9Ou0Yh28bpr2RUSpRpLQ=",
+    "id": 10
+  }
+]
