@@ -1,7 +1,8 @@
 {
-   "homepage": "http://{diegoleise}.github.io/{Entrega-Final-React}",
+   
   "name": "plants-shop",
   "private": true,
+  "homepage": "http://diegoleise.github.io/Entrega-Final-React",
   "version": "0.0.0",
   "type": "module",
   "scripts": {
