@@ -16,19 +16,7 @@ import NavResponsive from "../Componentes/NavResponsive"
 
 const Home = () => {
   const { cargando } = useContext(Context)
-  const mensaje = () => {
-toast.success('🦄 Wow so easy!', {
-position: "top-center",
-autoClose: 5000,
-hideProgressBar: false,
-closeOnClick: false,
-pauseOnHover: true,
-draggable: true,
-progress: undefined,
-theme: "colored",
 
-});
-  }
   return (
      <>
 
