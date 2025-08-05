@@ -4,7 +4,7 @@ import './CartElement.css'
 import { faTrash } from "@fortawesome/free-solid-svg-icons"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome"
 import {Tooltip} from 'react-tooltip';
-import CartTotal from "./CartTotal"
+
 
 const CartElements = () => {
     const { cart, deleteProductCart } = useContext(Context)
