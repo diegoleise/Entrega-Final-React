@@ -8,7 +8,7 @@ import { Context } from "../Context"
 import Footer from "../Componentes/Footer"
 import { ToastContainer, toast } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
-import NavResponsive from "../Componentes/NavResponsive"
+
 
 
 
@@ -21,7 +21,7 @@ const Home = () => {
      <>
 
       <NavBar />
-      <NavResponsive/>
+    
       <Banner />
       
     
