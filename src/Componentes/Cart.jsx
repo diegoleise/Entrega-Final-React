@@ -9,10 +9,10 @@ import { useContext } from 'react'
 
 
 const Cart = () => {
-    const { active, countProducts} = useContext(Context)
+    const { active, countProducts, setActive} = useContext(Context)
 
     return (
-        <div className={`cart-drawer ${active ? '' : 'cart-hiden'}`}>
+        <div onMouseOver={()=> setActive(true) } onMouseOut={()=> setActive(false)} className={`cart-drawer ${active ? '' : 'cart-hiden'}`}>
 
             <section className='cart-header'>
                 

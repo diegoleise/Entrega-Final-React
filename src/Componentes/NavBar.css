@@ -2,13 +2,13 @@
   display: flex;
 
   z-index: 100;
- 
+
 }
 
 .navbar {
- display: flex;
- width: 100%;
- background-color: chocolate;
+  display: flex;
+  width: 100%;
+  background-color: chocolate;
 }
 
 
@@ -20,11 +20,14 @@
   margin-top: 4vh;
   cursor: pointer;
   text-decoration: none;
+
 }
 
 .nav-h2:hover {
   color: white;
-
+  font-weight: bold;
+  transition :'all 0.3s ease-in-out';
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
 }
 
 .nav-cart {
@@ -36,7 +39,7 @@
 }
 
 .icon-cart {
-  
+
   width: 40px;
   height: 40px;
   stroke: #000;

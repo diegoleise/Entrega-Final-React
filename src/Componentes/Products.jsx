@@ -45,11 +45,10 @@ const Products = ({product}) => {
             return (
                
                 <section className="card" key={product.id} >
+                    
                     <div className="card-img" > 
                         <img src={product.imagen} alt="" />
                     </div>
-                   
-
                     <h5>{product.nombre}</h5>
                     <h4 className="card-precio">$ {product.precio}</h4>
                      <button onClick={() => buyProducts(product)} className="card-button">Agregar a mi carrito</button>

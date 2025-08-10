@@ -39,7 +39,7 @@ const NavBar = () => {
                             <NavLink style={{ textDecoration: 'none' }} to={'/admin'}><h4 className="nav-h2">Panel Admin</h4></NavLink>
                         </li>
                     </ul>
-                    <div onClick={() => setActive(!active)} className="nav-cart"><FontAwesomeIcon icon={faCartShopping} /></div>
+                    <div onClick={()=> setActive(!active)} onMouseOver={() => setActive(true)} onMouseOut={()=> setActive(false)} className="nav-cart"><FontAwesomeIcon icon={faCartShopping} /></div>
                     <span style={{marginRight:'15px'}} className={`count-products ${countProducts === 0 ? 'cart-hiden' : ''}`}>
                         {countProducts}
                     </span>
