@@ -65,6 +65,7 @@ const ContextProvider = ({ children }) => {
                 }
             }).filter(el => el !== null); // Quitamos los productos nulos
         });
+        // setCart(cart.filter(item=> item.id !== product.id)) //("Para  borrar todos de una vez")
     };
 
 

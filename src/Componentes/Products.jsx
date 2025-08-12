@@ -12,7 +12,7 @@ const Products = ({product}) => {
 
 
     
-    const { setCart } = useContext(Context)
+    const { setCart,cart } = useContext(Context)
    
 
 
@@ -21,20 +21,20 @@ const Products = ({product}) => {
 
     const buyProducts = (product) => {
 
-        setCart((prevCarrito) => {
+        
 
 
 
-            if (prevCarrito.find((item) => item.id === product.id)) {
+            if (cart.find((item) => item.id === product.id)) {
 
                 // Si el producto ya existe, incrementa la cantidad
-                return prevCarrito.map((item) =>
+                return setCart( cart.map((item) =>
                     item.id === product.id ? { ...item, cantidad: item.cantidad + 1 } : item
-                );
+                ));
             };
             // Si el producto no existe, agrégalo al carrito con cantidad 1 
-            return [...prevCarrito, { ...product, cantidad: 1 }];
-        });
+            return setCart([...cart, { ...product, cantidad: 1 }]);
+        ;
 
     };
 
