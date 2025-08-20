@@ -1,4 +1,5 @@
 import { createContext, useEffect, useState } from "react";
+import NotFoun from "./Componentes/NotFoun";
 
 export const AdminContext = createContext()
 
@@ -10,24 +11,33 @@ export const AdminProvider = ({ children }) => {
     const [open, setOpen] = useState(false)
     const [seleccionado, setSeleccionado] = useState(null)
     const [openEditor, setOpenEditor] = useState(false)
-    const apiUrl = 'https://682e2f0e746f8ca4a47c2dbd.mockapi.io/product'
-
+    const [error, setError] = useState(false)
+    const apiUrl = 'https://jsonplaceholde.typicode.com/users'
 
     useEffect(() => {
+
         fetch(apiUrl)
             .then((response) => response.json())
             .then((data) => {
                 setTimeout(() => {
                     setProductos(data);
                     setLoading(false);
-                }, 2000);
+                }, 1000);
             })
-            .catch((error) => {
+            .catch(() => {
                 console.error("Error fetching data:", error);
                 setError(true);
                 setLoading(false);
-            });
-    }, []);
+
+            })
+    }, [])
+
+
+    if (error) {
+        return <NotFoun />
+    }
+
+
 
     const cargarProductos = async () => {
         try {
@@ -53,7 +63,7 @@ export const AdminProvider = ({ children }) => {
                 throw new Error('Error al agregar producto')
             }
             const data = await respuesta.json()
-           
+
             cargarProductos()
             setOpen(false)
         } catch (error) {
@@ -92,8 +102,8 @@ export const AdminProvider = ({ children }) => {
                     method: 'DELETE',
                 })
                 if (!respuesta.ok) throw Error('Error al eliminar')
-                
-                
+
+
                 cargarProductos()
             } catch (error) {
                 alert('Hubo un problema al eliminar el producto')

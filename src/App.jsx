@@ -13,6 +13,7 @@ import RutasProtegidas from './Auth/RutasProtegidas'
 
 function App() {
  const { isAuthenticated } = useContext(Context)
+ 
 
   return (
     <>

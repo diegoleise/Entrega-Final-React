@@ -47,7 +47,7 @@ const ContextProvider = ({ children }) => {
             draggable: true,
             progress: undefined,
             theme: "colored",
-            
+
         });
 
         ;
@@ -58,12 +58,12 @@ const ContextProvider = ({ children }) => {
                     if (el.cantidad > 1) {
                         return { ...el, cantidad: el.cantidad - 1 };
                     } else {
-                        return null; // Si quantity es 1, marcamos para eliminar
+                        return null;
                     }
                 } else {
-                    return el; // Si no es el producto, lo dejamos igual
+                    return el;
                 }
-            }).filter(el => el !== null); // Quitamos los productos nulos
+            }).filter(el => el !== null);
         });
         // setCart(cart.filter(item=> item.id !== product.id)) //("Para  borrar todos de una vez")
     };
@@ -72,7 +72,7 @@ const ContextProvider = ({ children }) => {
     return (
         <Context.Provider value={{ cargando, setCargando, cart, setCart, VaciarCarrito, active, setActive, countProducts, products, setProducts, productosFiltrados, busqueda, setBusqueda, isAuthenticated, setIsAuth, deleteProductCart }}>
             {children}
-            <ToastContainer />
+
         </Context.Provider>
 
     )
