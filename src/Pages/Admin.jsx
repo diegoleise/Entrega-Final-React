@@ -17,7 +17,7 @@ const Admin = () => {
 
 
 
-    const { error,
+    const {
         productos,
         loading,
         open,
@@ -66,13 +66,11 @@ const navigate = useNavigate()
                         <ul className="list">
                             {productos.map((product) => (
                                 <li key={product.id} className="listItem">
-                                    <img
-                                        src={product.imagen}
-                                        alt={product.nombre}
-                                        className="listItemImage"
-                                    />
-                                    <span>{product.name}</span>
-                                    <span>${product.precio}</span>
+                                 
+                                    <span><h3>Id Usuario {product.userId}</h3></span>
+                                    <span><h3>Id {product.id}</h3></span>
+                                    <span><h4>Titulo: {product.title}</h4></span>
+                                    <span><h5>Cuerpo: {product.body}</h5></span>
                                     <div>
                                         <button className="editButton" onClick={() => {
                                             setOpenEditor(true)

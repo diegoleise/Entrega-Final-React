@@ -12,7 +12,7 @@ export const AdminProvider = ({ children }) => {
     const [seleccionado, setSeleccionado] = useState(null)
     const [openEditor, setOpenEditor] = useState(false)
     const [error, setError] = useState(false)
-    const apiUrl = 'https://jsonplaceholde.typicode.com/users'
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts'
 
     useEffect(() => {
 
@@ -21,20 +21,22 @@ export const AdminProvider = ({ children }) => {
             .then((data) => {
                 setTimeout(() => {
                     setProductos(data);
+                  ;
+                    
                     setLoading(false);
                 }, 1000);
             })
-            .catch(() => {
+            .catch((error) => {
                 console.error("Error fetching data:", error);
                 setError(true);
                 setLoading(false);
 
             })
     }, [])
-
+  console.log(productos)
 
     if (error) {
-        return <NotFoun />
+        return <NotFoun/>
     }
 
 
@@ -52,7 +54,8 @@ export const AdminProvider = ({ children }) => {
 
     const agregarProducto = async (producto) => {
         try {
-            const respuesta = await fetch('https://682e2f0e746f8ca4a47c2dbd.mockapi.io/product', {
+    const apiUrl = 'https://jsonplaceholder.typicode.com/posts'
+            const respuesta = await fetch('', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -98,7 +101,7 @@ export const AdminProvider = ({ children }) => {
         const confirmar = window.confirm('Estas seguro de eliminar el producto?')
         if (confirmar) {
             try {
-                const respuesta = await fetch(`https://682e2f0e746f8ca4a47c2dbd.mockapi.io/product/${id}`, {
+                const respuesta = await fetch(`https://jsonplaceholder.typicode.com/posts/${id}`, {
                     method: 'DELETE',
                 })
                 if (!respuesta.ok) throw Error('Error al eliminar')

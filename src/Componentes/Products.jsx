@@ -43,7 +43,7 @@ const Products = ({ product }) => {
         <section className="card" key={product.id} >
 
             <div className="card-img" >
-                <img src={product.imagen} alt="" />
+                <img src={product.imagen} alt="Imagen de planta" />
             </div>
             <h5>{product.nombre}</h5>
             <h4 className="card-precio">$ {product.precio}</h4>
