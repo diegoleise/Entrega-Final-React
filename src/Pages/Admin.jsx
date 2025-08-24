@@ -53,7 +53,7 @@ const navigate = useNavigate()
                                         navigate('/');
                                         localStorage.removeItem('isAuth');
                                     }}>
-                                        <i className="fa-solid fa-right-from-bracket"></i>
+                                        <h4>Salir del panel Admin</h4>
                                     </button>
                                 </li>
                                 <li className="navItem">
