@@ -1,3 +1,4 @@
+import { faAllergies } from "@fortawesome/free-solid-svg-icons";
 import { createContext } from "react";
 import { useState, useEffect } from "react"
 import { ToastContainer, toast } from 'react-toastify';
@@ -8,7 +9,7 @@ const ContextProvider = ({ children }) => {
 
     const [cart, setCart] = useState([])
 
-    const [cargando, setCargando] = useState(true)
+    const [cargando, setCargando] = useState(false)
 
     function VaciarCarrito() { setCart([]) };
 
@@ -20,21 +21,32 @@ const ContextProvider = ({ children }) => {
 
     const [busqueda, setBusqueda] = useState("")
 
-    const productosFiltrados = products.filter((product) => product?.nombre.toLowerCase().includes(busqueda.toLowerCase()))
 
     const [isAuthenticated, setIsAuth] = useState(false)
+    const [productosFiltrados, setProducFilt] = useState([])
+    
+   const filtrado = productosFiltrados.filter((product) => product.nombre.toLowerCase().includes(busqueda.toLowerCase()))
 
     useEffect(() => {
+
         fetch('/Data.json')
             .then((res) => res.json())
             .then(datos => {
                 setTimeout(() => {
-                    setProducts(datos),
-                        setCargando(false)
+                    setProducts(datos)
+                  setProducFilt(datos)
+
+                    setCargando(false)
                 },
                     1000)
             })
-    }, [])
+    }, []
+
+    )
+
+    
+
+
 
     const deleteProductCart = (product) => {
 
@@ -70,7 +82,7 @@ const ContextProvider = ({ children }) => {
 
 
     return (
-        <Context.Provider value={{ cargando, setCargando, cart, setCart, VaciarCarrito, active, setActive, countProducts, products, setProducts, productosFiltrados, busqueda, setBusqueda, isAuthenticated, setIsAuth, deleteProductCart }}>
+        <Context.Provider value={{ setProducFilt,filtrado, cargando, setCargando, cart, setCart, VaciarCarrito, active, setActive, countProducts, products, setProducts, productosFiltrados, busqueda, setBusqueda, isAuthenticated, setIsAuth, deleteProductCart }}>
             {children}
 
         </Context.Provider>

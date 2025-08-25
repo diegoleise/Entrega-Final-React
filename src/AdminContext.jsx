@@ -33,7 +33,7 @@ export const AdminProvider = ({ children }) => {
 
             })
     }, [])
-  console.log(productos)
+
 
     if (error) {
         return <NotFoun/>
