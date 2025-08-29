@@ -24,7 +24,7 @@ export const AuthProvider = ({ children }) => {
     if (!email) validationErrors.email = 'Email es requerido';
     if (!password) validationErrors.password = 'Password es requerido';
 
-    if (Object.keys(validationErrors).length > 0) {
+    if (Object.keys(validationErrors).length  > 0) {
       setErrors(validationErrors);
       return;
     }

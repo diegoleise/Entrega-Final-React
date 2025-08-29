@@ -23,9 +23,10 @@ const ContextProvider = ({ children }) => {
 
 
     const [isAuthenticated, setIsAuth] = useState(false)
-    const [productosFiltrados, setProducFilt] = useState([])
     
-   const filtrado = productosFiltrados.filter((product) => product.nombre.toLowerCase().includes(busqueda.toLowerCase()))
+    const [productosFiltrados, setProducFilt] = useState([])
+
+    const filtrado = productosFiltrados.filter((product) => product.nombre.toLowerCase().includes(busqueda.toLowerCase()))
 
     useEffect(() => {
 
@@ -34,7 +35,7 @@ const ContextProvider = ({ children }) => {
             .then(datos => {
                 setTimeout(() => {
                     setProducts(datos)
-                  setProducFilt(datos)
+                    setProducFilt(datos)
 
                     setCargando(false)
                 },
@@ -44,7 +45,7 @@ const ContextProvider = ({ children }) => {
 
     )
 
-    
+
 
 
 
@@ -82,7 +83,7 @@ const ContextProvider = ({ children }) => {
 
 
     return (
-        <Context.Provider value={{ setProducFilt,filtrado, cargando, setCargando, cart, setCart, VaciarCarrito, active, setActive, countProducts, products, setProducts, productosFiltrados, busqueda, setBusqueda, isAuthenticated, setIsAuth, deleteProductCart }}>
+        <Context.Provider value={{ setProducFilt, filtrado, cargando, setCargando, cart, setCart, VaciarCarrito, active, setActive, countProducts, products, setProducts, productosFiltrados, busqueda, setBusqueda, isAuthenticated, setIsAuth, deleteProductCart }}>
             {children}
 
         </Context.Provider>
