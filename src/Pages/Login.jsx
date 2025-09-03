@@ -2,6 +2,8 @@
 import { useContext } from 'react';
 import { AuthContext } from '../AuthContext';
 import NavBar from '../Componentes/NavBar';
+
+
 const Login = () => {
 
 
@@ -86,7 +88,7 @@ const Login = () => {
           Submit
         </button>
       </form>
-    </>);
+    </>)
 };
 
 export default Login;

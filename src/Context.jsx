@@ -65,7 +65,7 @@ const ContextProvider = ({ children }) => {
 
         ;
         <ToastContainer />
-        setCart(prevCart => {
+      /*  setCart(prevCart => {
             return prevCart.map(el => {
                 if (el.id === product.id) {
                     if (el.cantidad > 1) {
@@ -77,8 +77,8 @@ const ContextProvider = ({ children }) => {
                     return el;
                 }
             }).filter(el => el !== null);
-        });
-        // setCart(cart.filter(item=> item.id !== product.id)) //("Para  borrar todos de una vez")
+        });*/
+        setCart(cart.filter(item=> item.id !== product.id)) //("Para  borrar todos de una vez")
     };
 
 

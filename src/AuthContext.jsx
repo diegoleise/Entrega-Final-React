@@ -1,9 +1,11 @@
 import { createContext, useContext, useState, useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { Context } from './Context';
-
 export const AuthContext = createContext();
+
+
 export const AuthProvider = ({ children }) => {
+  
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [errors, setErrors] = useState({});
@@ -58,7 +60,7 @@ export const AuthProvider = ({ children }) => {
  
 
   return (
-    <AuthContext.Provider value={{email, setEmail,password, setPassword, handleSubmit,errors}}>
+    <AuthContext.Provider value={{errors, setErrors, email, setEmail,password, setPassword, handleSubmit,errors}}>
       {children}
     </AuthContext.Provider>
   );
