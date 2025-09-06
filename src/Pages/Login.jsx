@@ -44,7 +44,7 @@ const Login = () => {
 
     return (
        <> <NavBar/>
-        <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px', maxWidth: '400px', margin: 'auto', textAlign: 'center' }}>
+        <div style={{ padding: '20px', border: '1px solid #ccc', borderRadius: '8px', maxWidth: '400px', margin: 'auto',marginTop:'25px', textAlign: 'center' }}>
             <h2>Iniciar Sesión</h2>
             <form onSubmit={handleLogin} style={{ display: 'flex', flexDirection: 'column', gap: '15px' }}>
                 <input
