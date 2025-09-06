@@ -11,7 +11,7 @@ import { Context } from "../Context"
 
 const NavBar = () => {
 
-  const { active, setActive, countProducts } = useContext(Context)
+  const { active, setActive, countProducts,isAuthenticated } = useContext(Context)
 
 
 
@@ -32,7 +32,8 @@ const NavBar = () => {
                             <NavLink style={{ textDecoration: 'none' }} to={'/quienes'}><h4 className="nav-h2">Quienes Somos</h4></NavLink>
                         </li>
                         <li className="nav-item">
-                            <NavLink style={{ textDecoration: 'none' }} to={'/login'}><h4 className="nav-h2">Login</h4></NavLink>
+                            <NavLink style={{ textDecoration: 'none' }} 
+                            to={isAuthenticated ? '/admin': '/login' }><h4 className="nav-h2">Login</h4></NavLink>
                         </li>
 
                     <li className="nav-item">

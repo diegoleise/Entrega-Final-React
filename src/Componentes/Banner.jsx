@@ -11,9 +11,9 @@ const Banner = () => {
         <p className='banner-p'>El mejor lugar para encontrar tus plantas favoritas</p>
      
       </div>
-
-
-    </div>
+ 
+            </div>
+            
   )
 }
 

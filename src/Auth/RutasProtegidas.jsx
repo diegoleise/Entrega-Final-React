@@ -7,7 +7,6 @@ function RutasProtegidas({  isAuthenticated, children }) {
     return <Navigate to="/login" replace />;
   }
 
-  
   return children;
 }
 

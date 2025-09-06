@@ -49,7 +49,7 @@ const Products = ({ product }) => {
             <h4 className="card-precio">$ {product.precio}</h4>
             <button onClick={() => buyProducts(product)} className="card-button">Agregar a mi carrito</button>
             <Link to={`/productos/${product.id}`} style={{ textDecoration: 'none', margin: '10px', fontWeight: 'bold' }}>Ver mas</Link>
-
+      
         </section>
 
     )

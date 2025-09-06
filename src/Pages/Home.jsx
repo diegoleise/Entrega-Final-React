@@ -22,7 +22,7 @@ const Home = () => {
 
       <NavBar />
     
-      <Banner />
+      <Banner/>
       
     
 
